@@ -10,24 +10,24 @@
 
 <body>
   <div class="weather">
-    <form class="weather__form">
-      <input class="weather__input" type="text" placeholder="Enter city..">
-      <button class="weather__button">Search</button>
+    <form class="weather__form" data-js-weather-form>
+      <input class="weather__input" type="text" placeholder="Enter city.." data-js-weather-input>
+      <button class="weather__button" type="submit">Search</button>
     </form>
 
-    <div class="weather__info-container">
-      <p class="weather__info-error" hidden>City not found</p>
-      <p class="weather__info-loading" hidden>Loading...</p>
+    <div class="weather__info-container" data-js-weather-container>
+      <p class="weather__info-error" hidden data-js-weather-error>City not found!</p>
+      <p class="weather__info-loading" hidden data-js-weather-loading>Loading...</p>
 
-      <h2 class="weather__info-city"></h2>
-      <p class="weather__info-temp"></p>
+      <h2 class="weather__info-city" data-js-weather-city></h2>
+      <p class="weather__info-temp" data-js-weather-temp></p>
 
       <div class="weather__info-desc">
-        <p class="weather__info-desc-text"></p>
-        <img class="weather__info-desc-icon" src="" alt="">
+        <p class="weather__info-desc-text" data-js-weather-desc-text></p>
+        <img class="weather__info-desc-icon" src="" alt="" data-js-weather-desc-icon>
       </div>
 
-      <p class="weather__info-wind"></p>
+      <p class="weather__info-wind" data-js-weather-wind></p>
     </div>
   </div>
 
