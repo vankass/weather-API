@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Weather</title>
+</head>
+
+<body>
+  <div class="weather">
+    <form class="weather__form">
+      <input class="weather__input" type="text" placeholder="Enter city..">
+      <button class="weather__button">Search</button>
+    </form>
+
+    <div class="weather__info-container">
+      <p class="weather__info-error" hidden>City not found</p>
+      <p class="weather__info-loading" hidden>Loading...</p>
+
+      <h2 class="weather__info-city"></h2>
+      <p class="weather__info-temp"></p>
+
+      <div class="weather__info-desc">
+        <p class="weather__info-desc-text"></p>
+        <img class="weather__info-desc-icon" src="" alt="">
+      </div>
+
+      <p class="weather__info-wind"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
