@@ -22,6 +22,7 @@ form.addEventListener("submit", async (e) => {
 });
 
 async function getWeather(inputText) {
+  info.classList.remove("loaded");
   loading.hidden = false;
   error.hidden = true;
 
@@ -59,4 +60,6 @@ async function showWeather(data) {
     loading.hidden = true;
     info.hidden = false;
   };
+
+  info.classList.add("loaded");
 }

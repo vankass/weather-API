@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Weather</title>
 </head>
 
@@ -15,18 +16,21 @@
       <button class="weather__button" type="submit">Search</button>
     </form>
 
-    <div class="weather__info-container" data-js-weather-container>
+    <div class="weather__info-weating">
       <p class="weather__info-error" hidden data-js-weather-error>City not found!</p>
       <p class="weather__info-loading" hidden data-js-weather-loading>Loading...</p>
+    </div>
 
+    <div class="weather__info-container" data-js-weather-container>
       <h2 class="weather__info-city" data-js-weather-city></h2>
-      <p class="weather__info-temp" data-js-weather-temp></p>
 
-      <div class="weather__info-desc">
-        <p class="weather__info-desc-text" data-js-weather-desc-text></p>
+
+      <div class="weather__info-main">
+        <p class="weather__info-temp" data-js-weather-temp></p>
         <img class="weather__info-desc-icon" src="" alt="" data-js-weather-desc-icon>
       </div>
 
+      <p class="weather__info-desc-text" data-js-weather-desc-text></p>
       <p class="weather__info-wind" data-js-weather-wind></p>
     </div>
   </div>
